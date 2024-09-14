@@ -2,6 +2,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./navbar.css";
+import HeaderFile from "../../Home/Header/header";
 
 const Navbar = () => {
     const [appleData, setAppleData] = useState([]);
@@ -23,6 +24,7 @@ const Navbar = () => {
 
     return (
         <>
+        <HeaderFile />
             <nav className="nav">
                 <div className="wrapper">
                     <ul className="nav-items">

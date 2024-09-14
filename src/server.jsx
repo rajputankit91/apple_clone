@@ -13,7 +13,9 @@ export default function server({ environment = "development" } = {}) {
             support: Model,
             supportPro: Model,
             appleCare: Model,
-            footer: Model
+            footer: Model,
+            gridPhoto: Model,
+            detail: Model
         },
 
         seeds(server) {
@@ -437,7 +439,63 @@ export default function server({ environment = "development" } = {}) {
                     {
                         id: "1",
                         subtitle: "@AppleSupport"
-                    }
+                    },
+                    server.create('gridPhoto', {
+                        id: '1',
+                        url: 'https://www.apple.com/v/home/br/images/promos/airpods-4/promo_airpods_4_announce__dvb5tea0uyye_medium_2x.jpg',
+                        headLine: 'AirPods 4',
+                        subhead: 'Iconic.Now supersonic. Available with Active Noise Cancellation.',
+                        callout: 'Available starting 9.20',
+                        btn: ['Learn more', 'Pre-order'],
+                        color:'white'
+                    }),
+                    server.create('gridPhoto', {
+                        id: '2',
+                        url: 'https://www.apple.com/v/home/br/images/promos/airpods-pro-2/promo_airpods_pro_2_announce__egsgrnnmo3ee_medium_2x.jpg',
+                        headLine: 'AirPods Pro 2',
+                        subhead: 'Hearing Aid and Hearing Test features coming with a free software update this fall.',
+                        callout: 'Available starting 9.20',
+                        btn: ['Learn more', 'Buy'],
+                        color:'white'
+                    }),
+                    server.create('gridPhoto', {
+                        id: '3',
+                        url: 'https://www.apple.com/v/home/br/images/promos/airpods-max/promo_airpodsmax_announce__2srayzjz3iay_medium_2x.jpg',
+                        headLine: 'AirPods Max',
+                        subhead: 'Symphonic boom.',
+                        callout: 'Available starting 9.20',
+                        btn: ['Learn more', 'Pre-order'],
+                        color:'black'
+                    }),
+                    server.create('gridPhoto', {
+                        id: '4',
+                        url: 'https://www.apple.com/v/home/br/images/promos/carriers/promo_carrier__e0izvxwqosgi_medium_2x.jpg',
+                        headLine: 'Carrier deals at Apple',
+                        subhead: 'Get up to $1000 in credit on a new iPhone. Trade-in may be required.',
+                        callout: 'Available starting 9.20',
+                        btn: ['Learn more','Find your deal'],
+                        color:'black'
+                    }),
+                    server.create('detail' ,{
+                        id:'1',
+                        title:'1. Available for Qualified Purchasers only. Qualified Purchasers receive an Apple Gift Card when they purchase an Eligible Product at a Qualifying Location through September 30, 2024. Gift card values may vary by Eligible Product. Only one Apple Gift Card per Eligible Product per Qualified Purchaser. Offer subject to availability. While supplies last. Qualified Purchasers shall receive a discount equal to the value of the Apple Gift Card off the price of the Eligible Product, but will be charged for all items in their cart, including the Apple Gift Card. Important notice regarding the checkout receipt and monthly statement for Apple Card Monthly Installments (ACMI) purchases with this promotion: Qualified Purchasers selecting ACMI (a 0% APR payment option available only in the U.S.) as payment type at checkout shall receive a discount equal to the value of the Apple Gift Card off the price of the Eligible Product. This will result in one ACMI installment plan over 12 months for the Eligible Product discounted by the instant credit, and a second ACMI installment plan over 12 months for the full price of the Apple Gift Card. The total combined amount charged over the two separate ACMI installment plans will reflect the original full retail price of the Eligible Product. Separately, Qualified Purchasers will receive and be charged for the Apple Gift Card in the amount of the applicable discount off the Eligible Product. Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if you select it at checkout in the U.S. for eligible products purchased at Apple Store locations, apple.com, the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. See support.apple.com/kb/HT211204 for more information about eligible products. APR ranges may vary based on when you accepted an Apple Card. Cardholders who accept an Apple Card on and or after August 1, 2024: Variable APRs for Apple Card, other than ACMI, range from 19.24% to 29.49% based on creditworthiness. Rates as of August 1, 2024. Existing cardholders: See your Customer Agreement for applicable rates and fee. If you buy an ACMI-eligible product by choosing to pay in full with Apple Card (instead of using ACMI), that purchase is subject to the Apple Card variable APR, not 0% APR. Taxes and shipping on ACMI purchases are subject to the variable APR, not 0% APR. When you buy an iPhone with ACMI, you’ll need to select AT&T, Boost Mobile, T-Mobile, or Verizon as your carrier when you check out. An iPhone purchased with ACMI is always unlocked, so you can switch carriers at any time. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government and Veterans and Military Purchase Programs; or on refurbished devices. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI financing is subject to change at any time for any reason, including but not limited to installment term lengths and eligible products. See support.apple.com/kb/HT211204 for information about upcoming changes to ACMI financing. See the Apple Card Customer Agreement for more information about ACMI financing. Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch. Available for qualifying applicants in the United States. If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about accessing this offer or applying for Apple Card. This offer cannot be combined with the Apple Employee Purchase Plan or business loyalty pricing. Additional restrictions apply. View full terms and conditions of offer here.'
+                    }),
+                    server.create('detail' ,{
+                        id:'2',
+                        title:'2. Apple Intelligence will be available in beta on all iPhone 16 models, iPhone 15 Pro, and iPhone 15 Pro Max with Siri and device language set to U.S. English, as an iOS 18 update this fall. Some features and additional language will be coming over the course of the next year.'
+                    }),
+                    server.create('detail' ,{
+                        id:'3',
+                        title:'3. Apple Intelligence will be available in beta on all iPhone 16 models, iPhone 15 Pro, and iPhone 15 Pro Max with Siri and device language set to U.S. English, as an iOS 18 update this fall. Some features and additional language will be coming over the course of the next year.'
+                    }),
+                    server.create('detail' ,{
+                        id:'4',
+                        title:'4. Available in two models: AirPods 4 and AirPods 4 with Active Noise Cancellation.'
+                    }),
+                    server.create('detail' ,{
+                        id:'5',
+                        title:'5. Hearing Test and Hearing Aid features expected fall 2024. They will be supported on AirPods Pro 2 with the latest firmware paired with a compatible iPhone or iPad with iOS 18 or iPadOS 18 and later, and are intended for people 18 years old or older. The Hearing Aid feature will be intended for people with perceived mild to moderate hearing loss and is pending FDA review.'
+                    })
                 ]
             })
         },
@@ -477,6 +535,13 @@ export default function server({ environment = "development" } = {}) {
             this.get('/footers', (schema) => {
                 console.log("footers-Lists", schema)
                 return schema.footers.all()
+            })
+            this.get('/gridPhotos', (schema) => {
+                return schema.gridPhotos.all();
+            })
+
+            this.get('/details', (schema) => {
+                return schema.details.all();
             })
 
         }

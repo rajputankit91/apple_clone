@@ -1,3 +1,4 @@
+import HeaderFile from "../../Home/Header/header";
 import AppleCare from "../Apple-Care/applecare";
 import AppleSupport from "../appleSupport/appleSupport";
 import Footer from "../Footer/footer";
@@ -13,6 +14,7 @@ import "./support.css"
 export default function Support() {
     return (
         <>
+        <HeaderFile />
             <div className="support">
                 <div className="Support-banner">
                     <Image src={"https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_heros/hero-banner-homepage.image.large_2x.jpg"} className={"banner-img"} />
