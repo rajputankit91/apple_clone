@@ -1,0 +1,9 @@
+
+.welcome-video{
+    width: 100vw;
+}
+
+.welcome-video video{
+    width: 100%;
+    height: 400px;
+}
