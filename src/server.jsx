@@ -72,7 +72,29 @@ export default function server({ environment = "development" } = {}) {
                 price:"From Rs. 119900.00",
                 img:  "https://www.apple.com/v/iphone/home/bw/images/overview/select/iphone_14__eso1fig4ci6a_large.png" ,
                 id: uuid(),
-                color:["red","yellow","gray","blue"]
+                color:["red","yellow","gray","blue"],
+                specification:[
+                    {
+                        title:"Built for Apple Intelligence1",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png"
+                    },
+                    {
+                        title:"A18 Pro chip with 6-core GPU",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_a18_pro__exkx38vklpci_large.png"
+                    },
+                    {
+                        title:"Camera Control",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png"
+                    },
+                    {
+                        title:"Pro camera system",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_iphone_16_pro_camera__edtadvfv6hg2_large.png"
+                    },
+                    {
+                        title:"Up to 33 hours video playback2",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png"
+                    }
+                ]
             });
             server.create("selectPhone", {
                 title: "iPhone 16",
@@ -80,15 +102,59 @@ export default function server({ environment = "development" } = {}) {
                 price:"From ₹119900.00*",
                 img:  "https://www.apple.com/v/iphone/home/bw/images/overview/select/iphone_16__c5bvots96jee_large.png" ,
                 id: uuid(),
-                color:["red","yellow","gray","blue"]
+                color:["red","yellow","gray","blue"],
+                specification:[
+                    {
+                        title:"Built for Apple Intelligence1",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png"
+                    },
+                    {
+                        title:"A18 Pro chip with 6-core GPU",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_a18_pro__exkx38vklpci_large.png"
+                    },
+                    {
+                        title:"Camera Control",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png"
+                    },
+                    {
+                        title:"Pro camera system",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_iphone_16_pro_camera__edtadvfv6hg2_large.png"
+                    },
+                    {
+                        title:"Up to 33 hours video playback2",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png"
+                    }
+                ]
             });
             server.create("selectPhone", {
                 title: "iPhone 15",
                 description:"As amazing as ever.",
                 price:"From ₹69900.00*",
-                img:  "https://www.apple.com/v/iphone/home/bw/images/overview/select/iphone_15__buwagff0mwwi_xlarge.png" ,
+                img:"https://www.apple.com/v/iphone/home/bw/images/overview/select/iphone_14__eso1fig4ci6a_large.png" ,
                 id: uuid(),
-                color:["red","yellow","gray","blue","green"]
+                color:["red","yellow","gray","blue","green"],
+                specification:[
+                    {
+                        title:"Built for Apple Intelligence1",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png"
+                    },
+                    {
+                        title:"A18 Pro chip with 6-core GPU",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_a18_pro__exkx38vklpci_large.png"
+                    },
+                    {
+                        title:"Camera Control",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png"
+                    },
+                    {
+                        title:"Pro camera system",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_iphone_16_pro_camera__edtadvfv6hg2_large.png"
+                    },
+                    {
+                        title:"Up to 33 hours video playback2",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png"
+                    }
+                ]
             });
             server.create("selectPhone", {
                 title: "iPhone 14",
@@ -96,7 +162,29 @@ export default function server({ environment = "development" } = {}) {
                 price:"From ₹59900.00*",
                 img:  "https://www.apple.com/v/iphone/home/bw/images/overview/select/iphone_14__eso1fig4ci6a_large.png" ,
                 id: uuid(),
-                color:["red","yellow","gray","blue","black"]
+                color:["red","yellow","gray","blue","black"],
+                specification:[
+                    {
+                        title:"Built for Apple Intelligence1",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png"
+                    },
+                    {
+                        title:"A18 Pro chip with 6-core GPU",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_a18_pro__exkx38vklpci_large.png"
+                    },
+                    {
+                        title:"Camera Control",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png"
+                    },
+                    {
+                        title:"Pro camera system",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_iphone_16_pro_camera__edtadvfv6hg2_large.png"
+                    },
+                    {
+                        title:"Up to 33 hours video playback2",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png"
+                    }
+                ]
             });
             server.create("selectPhone", {
                 title: "iPhone SE",
@@ -104,7 +192,29 @@ export default function server({ environment = "development" } = {}) {
                 price:"From ₹47600.00*",
                 img:  "https://www.apple.com/v/iphone/home/bw/images/overview/select/iphone_16pro__erw9alves2qa_large.png" ,
                 id: uuid(),
-                color:["red","yellow","gray","blue"]
+                color:["red","yellow","gray","blue"],
+                specification:[
+                    {
+                        title:"Built for Apple Intelligence1",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png"
+                    },
+                    {
+                        title:"A18 Pro chip with 6-core GPU",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_a18_pro__exkx38vklpci_large.png"
+                    },
+                    {
+                        title:"Camera Control",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png"
+                    },
+                    {
+                        title:"Pro camera system",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_iphone_16_pro_camera__edtadvfv6hg2_large.png"
+                    },
+                    {
+                        title:"Up to 33 hours video playback2",
+                        icon:"https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png"
+                    }
+                ]
             })
         },
         routes() {

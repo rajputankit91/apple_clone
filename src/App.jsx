@@ -1,11 +1,11 @@
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Navbar from './navbar/Navbar'
 import MainComp from './main/Main';
 
 function App() {
 
-  const [appleData,setAppleData] = useState([]);
+  const [appleData, setAppleData] = useState([]);
 
   useEffect(() => {
     getAppleData();
@@ -24,10 +24,10 @@ function App() {
 
   // console.log(appleData)
   return (
-    <>
-    <Navbar data = {appleData} />
-    <MainComp />
-    </>
+    <div className='app'>
+      <Navbar data={appleData} />
+      <MainComp />
+    </div>
   )
 }
 

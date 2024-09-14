@@ -4,6 +4,7 @@ import Ribbon from "./ribben/Ribbon";
 import "./main.css"
 import WelcomeSectionComp from "./welcomSection/WelcomeSectionComp";
 import SelectSectionComp from "./selectSection/SelectSectionComp";
+import Banner from "./bannerSection/bannerSection";
 
 const MainComp = () =>{
 
@@ -12,6 +13,7 @@ const MainComp = () =>{
         <Ribbon />
         <WelcomeSectionComp />
         <SelectSectionComp />
+        <Banner />
         </>
     )
 }
