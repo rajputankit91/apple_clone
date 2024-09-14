@@ -1,33 +1,11 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import Navbar from './navbar/Navbar'
-import MainComp from './main/Main';
+import Iphone from './iPhone/Iphone';
 
 function App() {
 
-  const [appleData, setAppleData] = useState([]);
-
-  useEffect(() => {
-    getAppleData();
-  }, [])
-
-  const getAppleData = () => {
-    fetch("/api/apple")
-      .then((res) => {
-        return (
-          res.json()
-        );
-      })
-      .then((data) => setAppleData(data.phones))
-      .catch((err) => console.log(err))
-  }
-
-  // console.log(appleData)
   return (
-    <div className='app'>
-      <Navbar data={appleData} />
-      <MainComp />
-    </div>
+      <Iphone />
   )
 }
 
