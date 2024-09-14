@@ -1,11 +1,17 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Iphone from './iPhone/Iphone';
+import Support from './Comm-Components/support/supportCom';
 
 function App() {
 
   return (
+    <>
       <Iphone />
+      <div className='support'>
+        <Support />
+      </div>
+    </>
   )
 }
 
