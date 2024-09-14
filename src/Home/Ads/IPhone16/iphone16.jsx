@@ -9,7 +9,6 @@ const IPhone16 = () => {
             </div>
 
             <div>
-                {/* <Image src="https://www.apple.com/v/home/br/images/heroes/iphone-16/hero_iphone16_preorder__djo0elxwjbma_small_2x.jpg" /> */}
                 <img src="https://www.apple.com/v/home/br/images/heroes/iphone-16/hero_iphone16_preorder__djo0elxwjbma_large_2x.jpg" />
             </div>
 
