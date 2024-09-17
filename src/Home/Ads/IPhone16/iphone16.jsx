@@ -1,6 +1,6 @@
 import './iphone16.css';
 
-const IPhone16 = () => {
+const IPhone16666 = () => {
     return (
         <div className="iPhone16-Container">
             <div className="iPhone16-top-div">
@@ -28,4 +28,4 @@ const IPhone16 = () => {
     );
 }
 
-export default IPhone16;
+export default IPhone16666;

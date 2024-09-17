@@ -21,8 +21,11 @@ export default function SupportLists(){
             <div className="support-items">
                 {data.map((item) => {
                     return <div key={item.id}>
-                            <Image src={item.url}/>
-                            <p className="item-title"><a href={item.href}>{item.title}</a></p>
+                            <div className="support-inner-div">
+                                <Image src={item.url}/>
+                                <p className="item-title"><a href={item.href}>{item.title}</a></p>
+                            </div>
+                            
                     </div>
                 })}
                 </div>

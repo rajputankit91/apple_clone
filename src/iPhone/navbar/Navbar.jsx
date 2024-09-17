@@ -27,13 +27,13 @@ const Navbar = () => {
         <HeaderFile />
             <nav className="nav">
                 <div className="wrapper">
-                    <ul className="nav-items">
+                    <ul className="nav-items"> 
                         {
                             appleData && appleData.map((item, index) => (
                                 <li className="nav-item" id={item.id} key={index}>
                                     <a href="" className="nav-link">
                                         <img src={item.img} height="54px" />
-                                        <span className="label">{item.title}</span>
+                                        <span className="label">{item.title}</span> 
                                     </a>
                                 </li>
                             ))

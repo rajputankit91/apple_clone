@@ -5,6 +5,7 @@ import HeaderFile from "./Header/header";
 import HomeContent from "./HomeContent/homeContent";
 import HomeGrid from "./HomeGrid/HomeGrid";
 import FooterFile from "./Footer/footer";
+import IPhone16666 from "./Ads/IPhone16/iphone16";
 
 const Home = () =>{
     return (
@@ -12,8 +13,7 @@ const Home = () =>{
             <HeaderFile />
             <HomeContent />
             <IPhone16Pro />
-            {/* <IPhone16 /> */}
-            {/* <IPhone16 /> */}
+            <IPhone16666 />
             <IPhoneWatch />
             <HomeGrid />
             <Details />

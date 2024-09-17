@@ -2,7 +2,7 @@ import Heading from "../heading";
 
 export default function AppleService() {
     return (
-        <>
+        <div className="service-main-container">
             <div className="servicve-compenets">
                 <Heading text={"Apple Service Programmes"} level={2} />
                 <div>
@@ -19,8 +19,8 @@ export default function AppleService() {
                 </div>
                 <div>
                     <a href="#">See all programmes</a>
-                </div>
+                </div> 
             </div>
-        </>
+        </div>
     )
 }

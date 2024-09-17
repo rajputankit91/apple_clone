@@ -15,7 +15,11 @@ export default function server({ environment = "development" } = {}) {
             appleCare: Model,
             footer: Model,
             gridPhoto: Model,
-            detail: Model
+            detail: Model,
+            iPhoneGalleryGetToKnow:Model,
+            iPhoneessential:Model,
+            browserProduct: Model,
+            browserCategory:Model
         },
 
         seeds(server) {
@@ -495,7 +499,136 @@ export default function server({ environment = "development" } = {}) {
                     server.create('detail' ,{
                         id:'5',
                         title:'5. Hearing Test and Hearing Aid features expected fall 2024. They will be supported on AirPods Pro 2 with the latest firmware paired with a compatible iPhone or iPad with iOS 18 or iPadOS 18 and later, and are intended for people 18 years old or older. The Hearing Aid feature will be intended for people with perceived mild to moderate hearing loss and is pending FDA review.'
-                    })
+                    }),
+
+                    server.create('iPhoneGalleryGetToKnow' , {
+                        id:1,
+                        url:'https://www.apple.com/v/iphone/home/bw/images/overview/consider/apple_intelligence__gbh77cvflkia_medium_2x.jpg',
+                        subTitle:'Apple Intelligence',
+                        title:'AI‑opening possibilities.',
+                        color:'white'
+                    }),
+                    server.create('iPhoneGalleryGetToKnow' , {
+                        id:2,
+                        url:'https://www.apple.com/v/iphone/home/bw/images/overview/consider/camera__exi2qfijti0y_medium_2x.jpg',
+                        subTitle:'Cutting-Edge Cameras',
+                        title:'Picture your best',
+                        title1:'photes and videos',
+                        color:'white'
+                    }),
+                    server.create('iPhoneGalleryGetToKnow' , {
+                        id:3,
+                        url:'https://www.apple.com/v/iphone/home/bw/images/overview/consider/battery__2v7w6kmztvm2_medium_2x.jpg',
+                        subTitle:'Chip and Battery Life',
+                        title:'Fast that lasts.',
+                        color:'white'
+                    }),
+                    server.create('iPhoneGalleryGetToKnow' , {
+                        id:4,
+                        url:'https://www.apple.com/v/iphone/home/bw/images/overview/consider/innovation__os9bmmo3mjee_medium_2x.jpg',
+                        subTitle:'Innovation',
+                        title:'Beautiful and durable,',
+                        title1:'by Design',
+                        color:'black'
+                    }),
+                    server.create('iPhoneGalleryGetToKnow' , {
+                        id:5,
+                        url:'https://www.apple.com/v/iphone/home/bw/images/overview/consider/environment__e3v3gj88dl6q_medium_2x.jpg',
+                        subTitle:'Environment',
+                        title:'Recycle.Reuse.Repeat.',
+                        color:'black'
+                    }),
+                    server.create('iPhoneGalleryGetToKnow' , {
+                        id:6,
+                        url:'https://www.apple.com/v/iphone/home/bw/images/overview/consider/privacy__ckc0wa30o55y_medium_2x.jpg',
+                        subTitle:'Privacy',
+                        title:'Your Data',
+                        title1:'Just where you want it',
+                        color:'white'
+                    }),
+                    server.create('iPhoneGalleryGetToKnow' , {
+                        id:7,
+                        url:'https://www.apple.com/v/iphone/home/bw/images/overview/consider/personalize__dwg8srggrbo2_medium_2x.jpg',
+                        subTitle:'Customize Your iPhone',
+                        title:'Make it you.',
+                        title1: 'Thought and through',
+                        color:'white'
+                    }),
+                    server.create('iPhoneGalleryGetToKnow' , {
+                        id:8,
+                        url:'https://www.apple.com/v/iphone/home/bw/images/overview/consider/safety__bwp7rsowtjiu_medium_2x.jpg',
+                        subTitle:'Peace of Mind',
+                        title:'Helpful safety features.',
+                        title1:'Just in case.',
+                        color:'white'
+                    }),
+                    server.create('iPhoneessential',{
+                        id: "1",
+                        title: "MagSafe",
+                        para: "Snap on a magnetic case, wallet or both.And get fast, efficient wireless charging.",
+                        linkSub: "Shop MagSafe accessories",
+                        link: "https://www.apple.com/in/shop/accessories/all/magsafe",
+                        url: "https://www.apple.com/v/iphone/home/bw/images/overview/essentials/magsafe__dac2joyve8wi_large.jpg"
+                    }),
+                    server.create('iPhoneessential',{
+                        id: "2",
+                        title: "AirTag",
+                        para: "Attach one to your keys. Put another in your backpack.If they’re misplaced, just use the Find My app.",
+                        linkSub: "Buy",
+                        link: "https://www.apple.com/in/shop/buy-airtag/airtag",
+                        url: "https://www.apple.com/v/iphone/home/bw/images/overview/essentials/airtag__furx99ax8rm2_small.jpg"
+                    }),
+                    server.create('browserProduct', {
+                        id: "1",
+                        url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-product-mac?wid=225&hei=225&fmt=png-alpha&.v=1700067558508",
+                        title: "Mac"
+                    }),
+                    server.create('browserProduct', {
+                        id: "2",
+                        url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-product-ipad?wid=225&hei=225&fmt=png-alpha&.v=1699474605227",
+                        title: "iPad"
+                    }),
+                    server.create('browserProduct', {
+                        id: "3",
+                        url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-product-iphone?wid=225&hei=225&fmt=png-alpha&.v=1699474605231",
+                        title: "iPhone"
+                    }),
+                    server.create('browserProduct', {
+                        id: "4",
+                        url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-product-watch?wid=225&hei=225&fmt=png-alpha&.v=1699474605232",
+                        title: "Watch"
+                    }),
+                    server.create('browserProduct', {
+                        id: "5",
+                        url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-category-new-arrivals?wid=150&hei=150&fmt=png-alpha&.v=1699572503991",
+                        title: "TV & Home"
+                    }),
+                    server.create('browserCategory', {
+                        id: "1",
+                        url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-product-tv?wid=225&hei=225&fmt=png-alpha&.v=1699474605227",
+                        title: "New Arrivals"
+                    }),
+                    server.create('browserCategory', {
+                        id: "2",
+                        url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-category-cases-protection?wid=150&hei=150&fmt=png-alpha&.v=1699561941827",
+                        title: "Cases & Protection"
+                    }),
+                    server.create('browserCategory', {
+                        id: "3",
+                        url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-category-charging-essentials?wid=150&hei=150&fmt=png-alpha&.v=1699561941713",
+                        title: "Charging Essentials"
+                    }),
+                    server.create('browserCategory', {
+                        id: "4",
+                        url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-category-magsafe?wid=150&hei=150&fmt=png-alpha&.v=1699572503981",
+                        title: "MagSafe"
+                    }),
+                    server.create('browserCategory', {
+                        id: "5",
+                        url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-category-audio-music?wid=150&hei=150&fmt=png-alpha&.v=1699561939556",
+                        title: "Headphones & Speakers"
+                    }) 
+                                
                 ]
             })
         },
@@ -544,6 +677,23 @@ export default function server({ environment = "development" } = {}) {
                 return schema.details.all();
             })
 
+            this.get('/iPhoneGalleryGetToKnows', (schema) => {
+                console.log(schema);
+                return schema.iPhoneGalleryGetToKnows.all();
+            })
+
+            this.get('/iPhoneessentials', (schema) => {
+                return schema.iPhoneessentials.all();
+            })
+
+            this.get('/browserProducts', (schema) => {
+                return schema.browserProducts.all();
+            })
+            
+            this.get('/browserCategories', (schema) => {
+                console.log("check schema",schema)
+            return schema.browserCategories.all();
+        })
         }
     })
     return server;

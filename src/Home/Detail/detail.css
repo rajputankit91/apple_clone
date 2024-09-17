@@ -1,7 +1,7 @@
 .detail-Container{
     background-color: rgb(245, 245, 247);
     /* border: solid; */
-    margin-top: 150vh;
+    margin-top: 200vh;
     padding: 70px;
     display: flex;
     flex-direction: column;

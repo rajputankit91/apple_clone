@@ -27,6 +27,10 @@ const HeaderFile = () => {
                         <li><a href="#">AirPods</a></li>
                         <li><a href="#">TV & Home</a></li>
                         <li>
+                            <Link to={"/accessories"}><a href="#">Accessories</a></Link> 
+                        </li>
+
+                        <li>
                             <Link to={"/Support"}><a href="#">Support</a></Link>
                         </li>
                         <li><a href="#"><IoSearchOutline style={headerStyleIcon}/></a></li>

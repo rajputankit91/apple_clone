@@ -28,7 +28,7 @@ export default function AppleCare(){
                             <a href={item.link}>{item.linkSub}</a>
                             <div>
                             <Image src={item.url}/>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     })}

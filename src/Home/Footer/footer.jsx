@@ -13,7 +13,7 @@ function FooterFile() {
     useEffect(() => {
         footerData()
     }, [])
-
+ 
     return (
         <>
             <div className="footer">

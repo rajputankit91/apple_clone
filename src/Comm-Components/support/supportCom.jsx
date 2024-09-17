@@ -11,7 +11,7 @@ import SupportLists from "../supportList";
 import AppleTesting from "../Testing/appleTesting";
 import "./support.css"
 
-export default function Support() {
+export default function Support() { 
     return (
         <>
         <HeaderFile />
@@ -26,7 +26,7 @@ export default function Support() {
                 <AppleTesting />
                 <div className="applesuport-Container">                 
                     <Heading level={2} text={"Search for more topics"} className={"appleSearch-heading"} />
-                </div>
+                </div> 
                 <div className="searchtab-conatiner">
                     <Search />     
                 </div>

@@ -42,14 +42,14 @@ export default function Server({ environment = "development" } = {}) {
                 }),
                 server.create('ItemList', {
                     id: "5",
-                    url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-airpods_2x.png",
-                    title: "AirPods",
+                    url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-apple-vision-pro_2x.png",
+                    title: "Vision",
                     href: "https://support.apple.com/en-in/airpods"
                 }),
                 server.create('ItemList', {
                     id: "6",
-                    url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-music_2x.png",
-                    title: "Music",
+                    url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-airpods_2x.png",
+                    title: "AirPods",
                     href: "https://support.apple.com/en-in/music"
                 }),
                 server.create('ItemList', {
@@ -95,7 +95,8 @@ export default function Server({ environment = "development" } = {}) {
                 para: "Give us a few details and we’ll offer the best solution. Connect by phone, chat, email and more.",
                 linkSub: "Start Now",
                 link: "https://getsupport.apple.com/?caller=home&PRKEYS=",
-                url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-split-getsupport.image.large_2x.png"
+                url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-split-getsupport.image.large_2x.png",
+                height:'40vh'
             })
             server.create('supportPro', {
                 id: "2",
@@ -103,7 +104,8 @@ export default function Server({ environment = "development" } = {}) {
                 para: "Get help for all of your Apple products in one place, or connect with an expert.",
                 linkSub: "Download",
                 link: "https://apps.apple.com/in/app/apple-support/id1130498044?pt=2003&ct=support.home&mt=8&l=en",
-                url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-split-supportapp.image.large_2x.png"
+                url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_content/tile-split-supportapp.image.large_2x.png",
+                height:'100%'
             })
             server.create('appleCare', {
                 id: "1",

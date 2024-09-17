@@ -21,7 +21,8 @@ export default function AppleTesting(){
             {testing.map((item) => {
                 return <div className="testing-item" key={item.id}>
                     <Image src={item.url} />
-                    <Heading level={4} text={item.title}/>
+                    {/* <Heading level={4} text={item.title} className='testing-item-h4'/> */}
+                    <p>{item.title}</p>
                 </div>
             })}
         </div>

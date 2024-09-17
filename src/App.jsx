@@ -4,6 +4,7 @@ import Iphone from './iPhone/Iphone';
 import Support from './Comm-Components/support/supportCom';
 import Home from './Home/home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import AccessoriesCom from './Accessories/mainAccessories/accessories';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="*" element={<Home />}/>
         <Route path='/Iphone' element={<Iphone />}/>
         <Route path='/Support' element={<Support />}/>
+        <Route path='/accessories' element={<AccessoriesCom />}/>
       </Routes>
     </Router>
   )
