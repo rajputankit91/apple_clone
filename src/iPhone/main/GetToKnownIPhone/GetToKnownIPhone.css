@@ -1,4 +1,4 @@
-/* 
+
 .gallery-Main-Container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
@@ -48,4 +48,4 @@
     letter-spacing: -0.003em;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
     color: rgb(29,29,31);
-} */
+}

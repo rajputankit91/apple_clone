@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const HeaderFile = () => {
     const headerStyleIcon = {fontSize: '18px' , color:'#333336'}
 
-    return (
+    return ( 
         <>
             <header className='Mainheader'>
                 <nav>
@@ -17,12 +17,16 @@ const HeaderFile = () => {
                             <Link to={"/"}><a href="#"><FaApple style={headerStyleIcon}/></a></Link>
                         </li>
                         <li><a href="#">Store</a></li>
-                        <li><a href="#">Mac</a></li>
+                        <li>
+                            <Link to={"/product/macs"}><a href="#">Mac</a></Link> 
+                        </li>
                         <li><a href="#">iPad</a></li>
                         <li>
                             <Link to={"/Iphone"}><a href="#">iPhone</a></Link>
                         </li>
-                        <li><a href="#">Watch</a></li>
+                        <li>
+                            <Link to={"/product/watches"}><a href="#">Watch</a></Link> 
+                        </li>
                         <li><a href="#">Vision</a></li>
                         <li><a href="#">AirPods</a></li>
                         <li><a href="#">TV & Home</a></li>

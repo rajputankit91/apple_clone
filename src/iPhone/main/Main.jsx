@@ -8,7 +8,7 @@ import Banner from "./bannerSection/bannerSection";
 import GetToKnownI from "./GetToKnownIPhone/GetToKnownIPhone";
 import Essential from "./EssentialFile/Essential";
 import FooterFile from "../../Home/Footer/footer";
-// import GetToKnownGalleryComp from "../../ComponentReusable/GetToKnowGalleryComponent/getToKnowGallery";
+// import AllProductComponentFile from "../../ComponentReusable/AllProductComp/allProductComp";
 
 
 const MainComp = () =>{
@@ -18,12 +18,11 @@ const MainComp = () =>{
             <Ribbon />
             <WelcomeSectionComp />
             <GetToKnownI />
-            {/* <SelectSectionComp />  */}
-            {/* <GetToKnownGalleryComp /> */}
             <Banner /> 
             <Essential />
             <FooterFile />
-        </>
+            {/* <AllProductComponentFile /> */}
+        </> 
     )
 }
 

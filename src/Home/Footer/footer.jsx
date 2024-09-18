@@ -18,7 +18,7 @@ function FooterFile() {
         <>
             <div className="footer">
                 {footer.map((item) => {
-                    return <div className="footer-items">
+                    return <div className="footer-items" key={item.id}>
                         <h3>{item.title}</h3> 
                         {item.content.map((item) => {
                             return <p>{item.subtitle}</p>

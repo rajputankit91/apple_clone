@@ -4,16 +4,17 @@ import { Image } from "antd";
 import useFetch from "../../FetchResuableComp/fetch";
 
 const GetToKnownGalleryComp = ({fetchUrl, title}) => {
-    const [gallery, setGallery] = useState([]);
-    console.log(gallery);
+    // const [gallery, setGallery] = useState([]);
+    // console.log(gallery);//
+    
     
 
     const {fetchData} = useFetch({url:fetchUrl});
-    // console.log(fetchData);
+    console.log(fetchData);
 
-    useEffect(() =>{
-        setGallery(fetchData);
-    },[])
+    // useEffect(() =>{
+    //     setGallery(fetchData);
+    // },[])
         
     
     return (
@@ -21,7 +22,7 @@ const GetToKnownGalleryComp = ({fetchUrl, title}) => {
             <div className="gallery-outer-inner-div">
                 <h1>{title}</h1>
             </div>
-            <div className="gallery-Main-Container">
+            {/* <div className="gallery-Main-Container">
                 {gallery.map((item) => (
                     <div className="gallery-inner" key={item.id}>
                         <div>
@@ -34,7 +35,7 @@ const GetToKnownGalleryComp = ({fetchUrl, title}) => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div> 
     );
 }
