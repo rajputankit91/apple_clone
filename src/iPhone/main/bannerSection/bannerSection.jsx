@@ -2,7 +2,7 @@ import React from "react";
 import "./banner.css";
 
 const Banner = () => {
-    return (
+    return ( 
         <>
             <div className="bannerContainer">
                 <div className="banner-heading">
@@ -11,15 +11,14 @@ const Banner = () => {
                         <br />
                         our latest models.
                     </h2>
-                </div>
+                </div> 
                 <div className="banner-content">
                     <div className="banner-content-wrapper">
                         <div className="head">
                             <div className="banner-content-heading">
                                 <h2 className="headline">
-                                    A Guided Tour of
-                                    <br />
-                                    iPhone 16 & iPhone 16 Pro
+                                    <p>A Guided Tour of</p>
+                                    <p className="headline-p1">iPhone 16 & iPhone 16 Pro</p>
                                 </h2>
                             </div>
                             <div className="banner-btn-a">
@@ -37,5 +36,5 @@ const Banner = () => {
         </>
     )
 }
-
+ 
 export default Banner;

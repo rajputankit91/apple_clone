@@ -16,20 +16,23 @@ export default function Essential(){
     }, [])
 
         return(
-            <>
-            <div className="esential-container">
-            {essentialData.map((item) => {
-                return <div className="essential-items">
-                    <h3>{item.title}</h3>
-                    <p>{item.para}</p>
-                    <a href={item.link}>{item.linkSub}</a>
-                    <div>
-                    <img src= {item.url}/>
-                        </div>
+            <div className="esential-main-container">
+                <div className="esential-title-div">
+                    <h1>iPhone essentials.</h1>
                 </div>
-            })}
+                <div className="esential-container">
+                    {essentialData.map((item) => {
+                        return <div className="essential-items">
+                            <h3>{item.title}</h3>
+                            <p>{item.para}</p>
+                            <a href={item.link}>{item.linkSub}</a>
+                            <div>
+                                <img src= {item.url}/>
+                            </div>
+                        </div>
+                    })}
 
+                </div>
             </div>
-            </>
         )
 }

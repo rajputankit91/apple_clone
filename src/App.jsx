@@ -13,10 +13,10 @@ import AllProductComponentFile from './ComponentReusable/AllProductComp/allProdu
 
 
 function App() {
-  const products = ["watch" , "mac"];
+  // const products = ["watch" , "mac"];
   
   return (
-    <Router>
+    <Router> 
       <ScrollToTopPage />
       <Routes>
         <Route path="*" element={<Home />} />
@@ -24,10 +24,11 @@ function App() {
         <Route path='/Support' element={<Support />}/>
         <Route path='/accessories' element={<AccessoriesCom />}/>
         <Route path='/product/:productName' element={<AllProductComponentFile />} />
-        {/* <Route path='/product/mac' element={<AllProductComponentFile />} /> */}
+        {/* <Route path='/mac' element={<Mac />} /> */}
       </Routes>
     </Router>
   )
 }
 
 export default App;
+ 

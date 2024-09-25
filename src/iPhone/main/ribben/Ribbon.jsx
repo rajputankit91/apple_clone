@@ -15,7 +15,7 @@ const Ribbon = () =>{
                 </div>
             </div>
         </>
-    )
+    ) 
 }
 
 export default Ribbon;

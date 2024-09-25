@@ -15,11 +15,11 @@ const MainComp = () =>{
 
     return (
         <>
-            <Ribbon />
-            <WelcomeSectionComp />
-            <GetToKnownI />
-            <Banner /> 
-            <Essential />
+            {/* <Ribbon /> */}
+            {/* <WelcomeSectionComp /> */}
+            {/* <GetToKnownI /> */}
+            {/* <Banner />  */}
+            {/* <Essential /> */}
             <FooterFile />
             {/* <AllProductComponentFile /> */}
         </> 

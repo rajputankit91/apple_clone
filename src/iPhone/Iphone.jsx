@@ -8,7 +8,7 @@ const Iphone = () => {
 
     return (
         <div className="IphoneContainer">
-            <Navbar />
+            {/* <Navbar /> */}
             <MainComp />
         </div>
     )
