@@ -31,3 +31,23 @@
     /* border: solid; */
     width: 75%;
 }
+.gallary-img-container-div{
+    border: solid;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 20px;
+    bottom: 30px;
+    position: relative;
+}
+.gallary-img-inner-container{
+    border: solid red;
+    height: 100vh;
+}
+.gallary-img-container img{
+    border: solid;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 46vh;
+    height: 53.4vh;
+}

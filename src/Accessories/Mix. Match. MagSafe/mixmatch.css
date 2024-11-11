@@ -4,31 +4,35 @@
     width: 100%;
     background-color: #f5f5f7;
     font-family: sans-serif;
-    border: solid;
+    /* border: solid; */
 }
 
 .mix-matchleft {
     margin-top: 100px;
     width: 100%;
     text-align: center;
-    border: solid;
+    /* border: solid; */
 }
 
 .mix-matchleft p{
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 20px;
+    /* border: solid; */
+    margin-top: 20px;
+    
 }
 .mix-matchleft a{
-    font-size: 25px;
+    font-size: 15px;
     margin-bottom: 20px;
 }
 .mix-match img{
-    /* width: 990px; */
     width: 100%;
     height: 60vh;
     object-fit: cover;
-    /* border: solid; */
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
 }
  
 .mix-matchleft-inner{
@@ -45,7 +49,7 @@
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .inner-h1-part2{
-    border: solid blanchedalmond;
+    /* border: solid blanchedalmond; */
     position: relative;
     right: 30px;
 }

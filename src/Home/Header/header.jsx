@@ -13,10 +13,10 @@ const HeaderFile = () => {
             <header className='Mainheader'>
                 <nav>
                     <ul>
-                        <li>
+                        <li> 
                             <Link to={"/"}><a href="#"><FaApple style={headerStyleIcon} /></a></Link>
                         </li>
-                        <li><a href="#">Store</a></li>
+                        {/* <li><a href="#">Store</a></li> */}
                         <li>
                             <Link to={"/product/macs"}><a href="#">Mac</a></Link>
                         </li>
@@ -29,13 +29,13 @@ const HeaderFile = () => {
                         <li>
                             <Link to={"/product/watches"}><a href="#">Watch</a></Link>
                         </li>
-                        <li><a href="#">Vision</a></li>
+                        {/* <li><a href="#">Vision</a></li> */}
                         <li>
                             <Link to={"/product/airpods"}><a href="#">AirPods</a></Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to={"/product/tvhomes"}><a href="#">TV & Home</a></Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link to={"/accessories"}><a href="#">Accessories</a></Link>
                         </li>

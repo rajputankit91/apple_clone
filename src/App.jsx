@@ -13,7 +13,7 @@ import AllProductComponentFile from './ComponentReusable/AllProductComp/allProdu
 
 
 function App() {
-  // const products = ["watch" , "mac"];
+  // const products = ["watch" , "mac"]; 
   
   return (
     <Router> 

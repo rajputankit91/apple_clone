@@ -3,10 +3,12 @@ import { useParams } from "react-router";
 import HeaderFile from "../../Home/Header/header";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Image } from "antd";
-import UseNavBar from "../Navbar/navbar";
 import './allProductComp.css'
 import FooterFile from "../../Home/Footer/footer";
-import TvHomeGrid from "../../Tv&Home/tv&homeGrid";
+import Modal from "../Modal/modal";
+import GalleryPOPUpData from "../../GalleryPopUpData/galleryPopUpData";
+
+
 
 
 const AllProductComponentFile = () => {
@@ -14,6 +16,8 @@ const AllProductComponentFile = () => {
     console.log(productName);
 
     const [allProductData, setAllProductData] = useState([]);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selected, setSelected] = useState({});
 
     useEffect(() => {
         const fetchData = async () => {
@@ -23,6 +27,12 @@ const AllProductComponentFile = () => {
         };
         fetchData();
     }, [productName]);
+
+    const handleGallerySlide = (item) => {
+        console.log(item);
+        setIsModalOpen(true);
+        setSelected(item)
+    }
 
     return (
         <div style={{ marginTop: '50px' }}>
@@ -100,7 +110,137 @@ const AllProductComponentFile = () => {
             ))}
 
             {/* gallery */}
-            {/* {allProductData.map((galleyItm) => (
+
+            {allProductData.map((galleyItm) => (
+                galleyItm.gallery.map((glryItm) => (
+                    <div key={glryItm.id}>
+                        {glryItm.first.map((firstItm) => (
+                            <div className="gallery-outer-inner-div" key={firstItm.id}>
+                                <h1>{firstItm.title}</h1>
+                            </div>
+                        ))}
+
+
+                        <div className="gallery-main-outer-div">
+                            <div className="gallery-Main-Container">
+                                {glryItm.second.map((item) => (
+                                    // console.log(item)
+                                    <div>
+                                        <div key={item.id} className="gallery-inner">
+                                            {item.type === 'gridScroll' && (
+                                                // <div onClick={() => setIsModalOpen(true)} style={{ cursor: 'pointer' }}>
+                                                <div onClick={() => handleGallerySlide(item)} style={{ cursor: 'pointer' }}>
+                                                    <div>
+                                                        <Image src={item.url} preview={false} className="img" />
+                                                        <h3 style={{ color: item.color }}>{item.subTitle}</h3>
+                                                    </div>
+                                                    <div className="text-container">
+                                                        <h1 style={{ color: item.color }}>{item.title}</h1>
+                                                        <h1 style={{ color: item.color }}>{item.title1}</h1>
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+
+                                ))}
+                            </div>
+                        </div>
+                           
+
+
+
+
+                    </div>
+                    // console.log()
+
+                ))
+            ))}
+
+
+            {/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+                
+            </Modal> */}
+
+
+
+            {/* banner */}
+{/* 
+            {allProductData.map((item) => (
+                item.banner.map((bannerItm) => (
+                    <div>
+                        {bannerItm.first.map((fstItm) => (
+                            <div className="banner-heading">
+                                <h2 className="banner-h2">
+                                    <p style={{ color: fstItm.color }}>{fstItm.title}</p>
+                                </h2>
+                            </div>
+                        ))}
+
+                        {bannerItm.second.map((secItm) => (
+                            <div className="banner-content">
+                                <div className="banner-content-wrapper">
+                                    <div className="head">
+                                        <div className="banner-content-heading">
+                                            <h2 className="headline">
+                                                <p style={{ color: secItm.color }}>{secItm.title}</p>
+                                                <p style={{ color: secItm.color }}>{secItm.subTitle}</p>
+                                            </h2>
+                                        </div>
+                                        <div className="banner-btn-a">
+                                            <button style={{ backgroundColor: secItm.backgroundColor }}><a href="">
+                                                {secItm.btn}
+                                            </a></button>
+                                        </div>
+                                    </div>
+                                    <div className="banner-image">
+                                        <img src={secItm.url} />
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                ))
+            ))} */}
+
+            {/* essential */}
+            {allProductData.map((item) => (
+                item.essentials.map((essentialsItm) => (
+                    <div className="esential-main-container">
+                        {essentialsItm.first.map((fstItm) => (
+                            <div className="esential-title-div">
+                                <h1>{fstItm.title}</h1>
+                            </div>
+                        ))}
+
+                        <div className="esential-container">
+                            {essentialsItm.second.map((secItm) => (
+                                <div className="essential-items">
+                                    <h3>{secItm.title}</h3>
+                                    <p>{secItm.subTitle}</p>
+                                    <a href={secItm.link}>{secItm.link}</a>
+                                    <div>
+                                        <img src={secItm.url} />
+                                    </div>
+                                </div>
+                            ))}
+
+                        </div>
+                    </div>
+                ))
+            ))}
+            <FooterFile />
+        </div>
+    );
+};
+
+export default AllProductComponentFile;
+
+
+
+
+
+{/* {allProductData.map((galleyItm) => (
                 galleyItm.gallery.map((glryItm) => (
                     <div key={glryItm.id}>
                         {glryItm.first.map((firstItm) => (
@@ -142,112 +282,43 @@ const AllProductComponentFile = () => {
                 ))
             ))} */}
 
-            {allProductData.map((galleyItm) => (
-                galleyItm.gallery.map((glryItm) => (
-                    <div key={glryItm.id}>
-                        {glryItm.first.map((firstItm) => (
-                            <div className="gallery-outer-inner-div" key={firstItm.id}>
-                                <h1>{firstItm.title}</h1>
-                            </div>
-                        ))}
 
-                        {glryItm.second.map((item) => (
-                            <div key={item.id}>
-                                if(item.type === 'gridScroll'){
-                                     <div className="gallery-main-outer-div">
-                                     <div className="gallery-Main-Container">
-                                         <div className="gallery-inner">
-                                             <div>
-                                                 <Image src={item.url} preview={false} className="img" />
-                                                 <h3 style={{ color: item.color }}>{item.subTitle}</h3>
-                                             </div>
-                                             <div className="text-container">
-                                                 <h1 style={{ color: item.color }}>{item.title}</h1>
-                                                 <h1 style={{ color: item.color }}>{item.title1}</h1>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                }else if(item.type === 'gridImg'){
-                                    
-                                }
-                            </div>
-                        ))}
-                    </div>
-                ))
-            ))}
-
-
-            {/* banner */}
-
-            {allProductData.map((item) => (
-                item.banner.map((bannerItm) => (
-                    <div>
-                        {bannerItm.first.map((fstItm) => (
-                            <div className="banner-heading">
-                                <h2 className="banner-h2">
-                                    <p style={{ color: fstItm.color }}>{fstItm.title}</p>
-                                </h2>
-                            </div>
-                        ))}
-
-                        {bannerItm.second.map((secItm) => (
-                            <div className="banner-content">
-                                <div className="banner-content-wrapper">
-                                    <div className="head">
-                                        <div className="banner-content-heading">
-                                            <h2 className="headline">
-                                                <p style={{ color: secItm.color }}>{secItm.title}</p>
-                                                <p style={{ color: secItm.color }}>{secItm.subTitle}</p>
-                                            </h2>
-                                        </div>
-                                        <div className="banner-btn-a">
-                                            <button style={{ backgroundColor: secItm.backgroundColor }}><a href="">
-                                                {secItm.btn}
-                                            </a></button>
-                                        </div>
+{/* <div className="gallary-img-container-div">
+                                {glryItm.second.map((item) => (
+                                    <div key={item.id} className="gallary-img-inner-container">
+                                        {item.type === 'gridImg' && (
+                                            <div className="gallary-img-container">
+                                                <img src={item.url} />
+                                            </div>
+                                        )}
                                     </div>
-                                    <div className="banner-image">
-                                        <img src={secItm.url} />
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                ))
-            ))}
-
-            {/* essential */}
-            {allProductData.map((item) => (
-                item.essentials.map((essentialsItm) => (
-                    <div className="esential-main-container">
-                        {essentialsItm.first.map((fstItm) => (
-                            <div className="esential-title-div">
-                                <h1>{fstItm.title}</h1>
-                            </div>
-                        ))}
-
-                        <div className="esential-container">
-                            {essentialsItm.second.map((secItm) => (
-                                <div className="essential-items">
-                                    <h3>{secItm.title}</h3>
-                                    <p>{secItm.subTitle}</p>
-                                    <a href={secItm.link}>{secItm.link}</a>
-                                    <div>
-                                        <img src={secItm.url} />
-                                    </div>
-                                </div>
-                            ))}
-
-                        </div>
-                    </div>
-                ))
-            ))}
-            <FooterFile />
-        </div>
-    );
-};
-
-export default AllProductComponentFile;
+                                ))}
+                            </div> */}
 
 
+
+
+                        //     <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+                        //     {selected && selected.popUp && selected.popUp.map((popUp) =>{
+                        //         return (
+                        //             <div>
+                        //                 <div>
+                        //                     <h3>{popUp.subTitle}</h3>
+                        //                     <h1>{popUp.name}</h1>
+                        //                 </div>
+                        //                 <div>
+                        //                     {popUp && popUp.titles.map((titleItm) =>{
+                        //                         console.log(titleItm);
+                        //                         return (
+                        //                             <>
+                        //                                 <p>{titleItm.title}</p>
+                        //                                 <img src={titleItm.url} />
+                        //                             </>
+                        //                         )
+                        //                     })}
+                                            
+                        //                 </div>
+                        //             </div>
+                        //         )
+                        //     })}
+                        // </Modal>

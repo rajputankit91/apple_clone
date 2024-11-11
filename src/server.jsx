@@ -1,5 +1,3 @@
-
-import { Modal } from "antd";
 import { createServer, Model } from "miragejs";
 import uuid from "react-uuid";
 
@@ -7,8 +5,6 @@ export default function server({ environment = "development" } = {}) {
     let server = createServer({
         environment,
         models: {
-            // phone: Model,
-            // selectPhone: Model,
             ItemList: Model,
             testList: Model,
             support: Model,
@@ -17,225 +13,17 @@ export default function server({ environment = "development" } = {}) {
             footer: Model,
             gridPhoto: Model,
             detail: Model,
-            // iPhoneGalleryGetToKnow: Model,
-            // iPhoneessential: Model,
             browserProduct: Model,
             browserCategory: Model,
             mac: Model,
             iPad: Model,
             watch: Model,
-            airpod:Model,
-            tvhome:Model,
-            iphone:Model
+            airpod: Model,
+            tvhome: Model,
+            iphone: Model,
         },
 
         seeds(server) {
-            // server.create("phone", {
-            //     title: "iPhone 16 Pro",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/chapternav/iphone_16_pro_light__sh8e76empwyq_large.svg",
-            //     id: uuid()
-            // });
-            // server.create("phone", {
-            //     title: "iPhone 16",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/chapternav/iphone_16_light__1g0j6j3ygciy_large.svg",
-            //     id: uuid()
-            // });
-            // server.create("phone", {
-            //     title: "iPhone 15",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/chapternav/iphone_15_light__fj1tpga410a6_large.svg",
-            //     id: uuid()
-            // });
-            // server.create("phone", {
-            //     title: "iPhone 14",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/chapternav/iphone_14_light__cazn2nyanwuq_large.svg",
-            //     id: uuid()
-            // });
-            // server.create("phone", {
-            //     title: "iPhoneSE",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/chapternav/iphone_se_light__cdjrao3pq2he_large.svg",
-            //     id: uuid()
-            // });
-            // server.create("phone", {
-            //     title: "compare",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/chapternav/iphone_compare_light__f01dnbvbb62y_large.svg",
-            //     id: uuid()
-            // });
-            // server.create("phone", {
-            //     title: "AirPods",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/chapternav/airpods_light__cd9exnztczjm_large.svg",
-            //     id: uuid()
-            // });
-            // server.create("phone", {
-            //     title: "AirTag",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/chapternav/airtag_light__c19z9f5le0ia_large.svg",
-            //     id: uuid()
-            // });
-            // server.create("phone", {
-            //     title: "Accessories",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/chapternav/accessories_light__e917u1i857e6_large.svg",
-            //     id: uuid()
-            // });
-            // server.create("phone", {
-            //     title: "iOS 18",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/chapternav/iphone_ios_light__b0jhieo01t0i_large.svg",
-            //     id: uuid()
-            // });
-            // server.create("phone", {
-            //     title: "Shop iPhone",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/chapternav/shop_iphone_light__e4dlk2n6h26a_large.svg",
-            //     id: uuid()
-            // });
-            // server.create("selectPhone", {
-            //     title: "iPhone 16 Pro",
-            //     description: "The ultimate iPhone",
-            //     price: "From Rs. 119900.00",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/overview/select/iphone_14__eso1fig4ci6a_large.png",
-            //     id: uuid(),
-            //     color: ["red", "yellow", "gray", "blue"],
-            //     specification: [
-            //         {
-            //             title: "Built for Apple Intelligence1",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png"
-            //         },
-            //         {
-            //             title: "A18 Pro chip with 6-core GPU",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_a18_pro__exkx38vklpci_large.png"
-            //         },
-            //         {
-            //             title: "Camera Control",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png"
-            //         },
-            //         {
-            //             title: "Pro camera system",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_iphone_16_pro_camera__edtadvfv6hg2_large.png"
-            //         },
-            //         {
-            //             title: "Up to 33 hours video playback2",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png"
-            //         }
-            //     ]
-            // });
-            // server.create("selectPhone", {
-            //     title: "iPhone 16",
-            //     description: "A total powerhouse.",
-            //     price: "From ₹119900.00*",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/overview/select/iphone_16__c5bvots96jee_large.png",
-            //     id: uuid(),
-            //     color: ["red", "yellow", "gray", "blue"],
-            //     specification: [
-            //         {
-            //             title: "Built for Apple Intelligence1",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png"
-            //         },
-            //         {
-            //             title: "A18 Pro chip with 6-core GPU",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_a18_pro__exkx38vklpci_large.png"
-            //         },
-            //         {
-            //             title: "Camera Control",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png"
-            //         },
-            //         {
-            //             title: "Pro camera system",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_iphone_16_pro_camera__edtadvfv6hg2_large.png"
-            //         },
-            //         {
-            //             title: "Up to 33 hours video playback2",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png"
-            //         }
-            //     ]
-            // });
-            // server.create("selectPhone", {
-            //     title: "iPhone 15",
-            //     description: "As amazing as ever.",
-            //     price: "From ₹69900.00*",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/overview/select/iphone_14__eso1fig4ci6a_large.png",
-            //     id: uuid(),
-            //     color: ["red", "yellow", "gray", "blue", "green"],
-            //     specification: [
-            //         {
-            //             title: "Built for Apple Intelligence1",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png"
-            //         },
-
-            //         {
-            //             title: "A18 Pro chip with 6-core GPU",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_a18_pro__exkx38vklpci_large.png"
-            //         },
-            //         {
-            //             title: "Camera Control",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png"
-            //         },
-            //         {
-            //             title: "Pro camera system",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_iphone_16_pro_camera__edtadvfv6hg2_large.png"
-            //         },
-            //         {
-            //             title: "Up to 33 hours video playback2",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png"
-            //         }
-            //     ]
-            // });
-            // server.create("selectPhone", {
-            //     title: "iPhone 14",
-            //     description: "All kinds of awesome.",
-            //     price: "From ₹59900.00*",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/overview/select/iphone_14__eso1fig4ci6a_large.png",
-            //     id: uuid(),
-            //     color: ["red", "yellow", "gray", "blue", "black"],
-            //     specification: [
-            //         {
-            //             title: "Built for Apple Intelligence1",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png"
-            //         },
-            //         {
-            //             title: "A18 Pro chip with 6-core GPU",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_a18_pro__exkx38vklpci_large.png"
-            //         },
-            //         {
-            //             title: "Camera Control",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png"
-            //         },
-            //         {
-            //             title: "Pro camera system",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_iphone_16_pro_camera__edtadvfv6hg2_large.png"
-            //         },
-            //         {
-            //             title: "Up to 33 hours video playback2",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png"
-            //         }
-            //     ]
-            // });
-            // server.create("selectPhone", {
-            //     title: "iPhone SE",
-            //     description: "Serious power. Serious value.",
-            //     price: "From ₹47600.00*",
-            //     img: "https://www.apple.com/v/iphone/home/bw/images/overview/select/iphone_16pro__erw9alves2qa_large.png",
-            //     id: uuid(),
-            //     color: ["red", "yellow", "gray", "blue"],
-            //     specification: [
-            //         {
-            //             title: "Built for Apple Intelligence1",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png"
-            //         },
-            //         {
-            //             title: "A18 Pro chip with 6-core GPU",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_a18_pro__exkx38vklpci_large.png"
-            //         },
-            //         {
-            //             title: "Camera Control",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png"
-            //         },
-            //         {
-            //             title: "Pro camera system",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_iphone_16_pro_camera__edtadvfv6hg2_large.png"
-            //         },
-            //         {
-            //             title: "Up to 33 hours video playback2",
-            //             icon: "https://www.apple.com/v/iphone/home/bw/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png"
-            //         }
-            //     ]
-            // });
             server.create('ItemList', {
                 id: "1",
                 url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/image-grid-iphone_2x.png",
@@ -278,11 +66,11 @@ export default function server({ environment = "development" } = {}) {
                     title: "TV",
                     href: "https://support.apple.com/en-in/tv"
                 })
-            server.create('testList', {
-                id: "1",
-                url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/tile-topic-password_2x.svg",
-                title: "Forgotten Apple ID password"
-            }),
+                server.create('testList', {
+                    id: "1",
+                    url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/tile-topic-password_2x.svg",
+                    title: "Forgotten Apple ID password"
+                }),
                 server.create('testList', {
                     id: "2",
                     url: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/tile-topic-repair_2x.svg",
@@ -353,7 +141,7 @@ export default function server({ environment = "development" } = {}) {
                         id: "1",
                         subtitle: "iPhone"
                     },
-                    {
+                    { 
                         id: "2",
                         subtitle: "Mac"
                     },
@@ -451,16 +239,18 @@ export default function server({ environment = "development" } = {}) {
                         id: "1",
                         subtitle: "@AppleSupport"
                     },
-                    server.create('gridPhoto', {
-                        id: '1',
-                        url: 'https://www.apple.com/v/home/br/images/promos/airpods-4/promo_airpods_4_announce__dvb5tea0uyye_medium_2x.jpg',
-                        headLine: 'AirPods 4',
-                        subhead: 'Iconic.Now supersonic. Available with Active Noise Cancellation.',
-                        callout: 'Available starting 9.20',
-                        btn: ['Learn more', 'Pre-order'],
-                        color: 'white'
-                    }),
-                    server.create('gridPhoto', {
+                ]
+            })
+            server.create('gridPhoto', {
+                                id: '1',
+                                url: 'https://www.apple.com/v/home/br/images/promos/airpods-4/promo_airpods_4_announce__dvb5tea0uyye_medium_2x.jpg',
+                                headLine: 'AirPods 4',
+                                subhead: 'Iconic.Now supersonic. Available with Active Noise Cancellation.',
+                                callout: 'Available starting 9.20',
+                                btn: ['Learn more', 'Pre-order'],
+                                color: 'white'
+            }),
+            server.create('gridPhoto', {
                         id: '2',
                         url: 'https://www.apple.com/v/home/br/images/promos/airpods-pro-2/promo_airpods_pro_2_announce__egsgrnnmo3ee_medium_2x.jpg',
                         headLine: 'AirPods Pro 2',
@@ -468,7 +258,7 @@ export default function server({ environment = "development" } = {}) {
                         callout: 'Available starting 9.20',
                         btn: ['Learn more', 'Buy'],
                         color: 'white'
-                    }),
+            }),
                     server.create('gridPhoto', {
                         id: '3',
                         url: 'https://www.apple.com/v/home/br/images/promos/airpods-max/promo_airpodsmax_announce__2srayzjz3iay_medium_2x.jpg',
@@ -507,84 +297,6 @@ export default function server({ environment = "development" } = {}) {
                         id: '5',
                         title: '5. Hearing Test and Hearing Aid features expected fall 2024. They will be supported on AirPods Pro 2 with the latest firmware paired with a compatible iPhone or iPad with iOS 18 or iPadOS 18 and later, and are intended for people 18 years old or older. The Hearing Aid feature will be intended for people with perceived mild to moderate hearing loss and is pending FDA review.'
                     }),
-
-                    // server.create('iPhoneGalleryGetToKnow', {
-                    //     id: 1,
-                    //     url: 'https://www.apple.com/v/iphone/home/bw/images/overview/consider/apple_intelligence__gbh77cvflkia_medium_2x.jpg',
-                    //     subTitle: 'Apple Intelligence',
-                    //     title: 'AI‑opening possibilities.',
-                    //     color: 'white'
-                    // }),
-                    // server.create('iPhoneGalleryGetToKnow', {
-                    //     id: 2,
-                    //     url: 'https://www.apple.com/v/iphone/home/bw/images/overview/consider/camera__exi2qfijti0y_medium_2x.jpg',
-                    //     subTitle: 'Cutting-Edge Cameras',
-                    //     title: 'Picture your best',
-                    //     title1: 'photes and videos',
-                    //     color: 'white'
-                    // }),
-                    // server.create('iPhoneGalleryGetToKnow', {
-                    //     id: 3,
-                    //     url: 'https://www.apple.com/v/iphone/home/bw/images/overview/consider/battery__2v7w6kmztvm2_medium_2x.jpg',
-                    //     subTitle: 'Chip and Battery Life',
-                    //     title: 'Fast that lasts.',
-                    //     color: 'white'
-                    // }),
-                    // server.create('iPhoneGalleryGetToKnow', {
-                    //     id: 4,
-                    //     url: 'https://www.apple.com/v/iphone/home/bw/images/overview/consider/innovation__os9bmmo3mjee_medium_2x.jpg',
-                    //     subTitle: 'Innovation',
-                    //     title: 'Beautiful and durable,',
-                    //     title1: 'by Design',
-                    //     color: 'black'
-                    // }),
-                    // server.create('iPhoneGalleryGetToKnow', {
-                    //     id: 5,
-                    //     url: 'https://www.apple.com/v/iphone/home/bw/images/overview/consider/environment__e3v3gj88dl6q_medium_2x.jpg',
-                    //     subTitle: 'Environment',
-                    //     title: 'Recycle.Reuse.Repeat.',
-                    //     color: 'black'
-                    // }),
-                    //server.create('iPhoneGalleryGetToKnow', {
-                    //     id: 6,
-                    //     url: 'https://www.apple.com/v/iphone/home/bw/images/overview/consider/privacy__ckc0wa30o55y_medium_2x.jpg',
-                    //     subTitle: 'Privacy',
-                    //     title: 'Your Data',
-                    //     title1: 'Just where you want it',
-                    //     color: 'white'
-                    // }),
-                    // server.create('iPhoneGalleryGetToKnow', {
-                    //     id: 7,
-                    //     url: 'https://www.apple.com/v/iphone/home/bw/images/overview/consider/personalize__dwg8srggrbo2_medium_2x.jpg',
-                    //     subTitle: 'Customize Your iPhone',
-                    //     title: 'Make it you.',
-                    //     title1: 'Thought and through',
-                    //     color: 'white'
-                    // }),
-                    // server.create('iPhoneGalleryGetToKnow', {
-                    //     id: 8,
-                    //     url: 'https://www.apple.com/v/iphone/home/bw/images/overview/consider/safety__bwp7rsowtjiu_medium_2x.jpg',
-                    //     subTitle: 'Peace of Mind',
-                    //     title: 'Helpful safety features.',
-                    //     title1: 'Just in case.',
-                    //     color: 'white'
-                    // }),
-                    // server.create('iPhoneessential', {
-                    //     id: "1",
-                    //     title: "MagSafe",
-                    //     para: "Snap on a magnetic case, wallet or both.And get fast, efficient wireless charging.",
-                    //     linkSub: "Shop MagSafe accessories",
-                    //     link: "https://www.apple.com/in/shop/accessories/all/magsafe",
-                    //     url: "https://www.apple.com/v/iphone/home/bw/images/overview/essentials/magsafe__dac2joyve8wi_large.jpg"
-                    // }),
-                    // server.create('iPhoneessential', {
-                    //     id: "2",
-                    //     title: "AirTag",
-                    //     para: "Attach one to your keys. Put another in your backpack.If they’re misplaced, just use the Find My app.",
-                    //     linkSub: "Buy",
-                    //     link: "https://www.apple.com/in/shop/buy-airtag/airtag",
-                    //     url: "https://www.apple.com/v/iphone/home/bw/images/overview/essentials/airtag__furx99ax8rm2_small.jpg"
-                    // }),
                     server.create('browserProduct', {
                         id: "1",
                         url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-product-mac?wid=225&hei=225&fmt=png-alpha&.v=1700067558508",
@@ -635,12 +347,6 @@ export default function server({ environment = "development" } = {}) {
                         url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-category-audio-music?wid=150&hei=150&fmt=png-alpha&.v=1699561939556",
                         title: "Headphones & Speakers"
                     }),
-
-                    // server.create('mac', {
-                    //     id: "1",
-                    //     url: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/icon-category-audio-music?wid=150&hei=150&fmt=png-alpha&.v=1699561939556",
-                    //     title: "Headphones & Speakers"
-                    // }),
                     server.create('mac', {
                         nav: [
                             { url: "https://www.apple.com/v/mac/home/ca/images/chapternav/macbookair_light__dfypt7o3xfgy_large.svg", title: "MacBook Air" },
@@ -670,73 +376,163 @@ export default function server({ environment = "development" } = {}) {
                                 {
                                     id: uuid(),
                                     url: 'https://www.apple.com/105/media/us/mac/family/2024/60fc0159-4236-4a03-8534-f5ba07e538c5/anim/welcome/small_2x.mp4#t=7.56548',
-                                    title:'hello',
-                                    type:'video'
+                                    title: 'hello',
+                                    type: 'video'
                                 }
                             ]
                         }],
                         gallery: [{
                             first: [
                                 {
-                                    id: uuid(),
+                                    id: '1',
                                     title: 'Get to know Mac',
                                 }
                             ],
                             second: [
                                 {
-                                    id: uuid(),
+                                    id: '1',
                                     url: 'https://www.apple.com/v/mac/home/ca/images/overview/consider/mac_ease__bvgkz2zdltxy_medium_2x.jpg',
                                     subTitle: 'Cutting-Edge Cameras',
                                     title: 'Picture your best',
                                     title1: 'photos and videos',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'Getting Started',
+                                            name:'Easy to use. Easy to love.',
+                                            titles:[
+                                                {id:'1' , title:'Familiar as iPhone. You’ll feel right at home on Mac, with many of the same apps as iPhone — like Messages, Photos, Notes, and FaceTime.',url:'https://apple.com/v/mac/home/ca/images/overview/consider/boc_ease_01__fubebwkx80q6_large.jpg'},
+                                                {id :'2' , title:'Fully loaded. Get started with apps you’ll use every day, like Mail, Calendar, and Safari for surfing the web. And if you want to create documents, spreadsheets, or presentations, there are powerful built-in productivity apps like Pages, Numbers, and Keynote.' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_ease_02__5a1r49adu0y6_large.jpg'},
+                                                {id:'3' , title:'Simple setup. Migration Assistant makes it easy to transfer your data — including documents, photos, settings, and user accounts — from your previous Mac or PC..' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_ease_03__dknq8zpxcogi_large.jpg'}
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
-                                    id: uuid(),
+                                    id: '2',
                                     url: 'https://www.apple.com/v/mac/home/ca/images/overview/consider/mac_iphone__gh1tblkt6bqm_medium_2x.jpg',
                                     subTitle: 'Cutting-Edge Cameras',
                                     title: 'Picture your best',
                                     title1: 'photos and videos',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'Performance and Battery Life',
+                                            name:'Go fast. Go far.',
+                                            titles:[
+                                                {id:'1' , title:'Supercharged by Apple silicon. Apple silicon brings game-changing power and speed to Mac. It integrates the CPU, GPU, and Neural Engine onto a single power-efficient chip, accelerating everything you do.',url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_performance_01__slniatu7x8yi_large.jpg'},
+                                                {id :'2' , title:'Seize the day on a single charge. Thanks to the efficiency of Apple silicon, Mac laptops deliver up to 22 hours of battery life with incredible performance whether you’re plugged in or not.1' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_performance_02__b1m37qedkb6q_large.jpg'},
+                                                {id:'3' , title:'Work smart. And fast. From designing a stunning presentation to making an epic spreadsheet, Mac lets you get more done faster — whether you’re running to class or running a business.' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_performance_03__eapkd2ag65oy_large.jpg'},
+                                                {id:'4' , title:'Create at the speed of your imagination. From recording a podcast to editing your first feature film, you can do, make, and create in all-new ways with the speed and power of the ultracapable Mac.' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_performance_04__gkxbhujaspme_large.jpg'}
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
-                                    id: uuid(),
+                                    id: '3',
                                     url: 'https://www.apple.com/v/mac/home/ca/images/overview/consider/mac_performance__dh5hyac1zf8m_medium_2x.jpg',
                                     subTitle: 'Cutting-Edge Cameras',
                                     title: 'Picture your best',
                                     title1: 'photos and videos',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'Mac and iPhone',
+                                            name:'Dream team.',
+                                            titles:[
+                                                {id:'1' , title:'Mac answers the call. You can answer calls or messages from your iPhone directly on your Mac. All the messages that appear on your iPhone appear on your Mac, too.3',url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_mac_iphone_01__d31agqfjcxiu_large.jpg'},
+                                                {id :'2' , title:'Shoot on iPhone. See it on Mac. Use your iPhone to take a picture or scan a document and have it automatically appear on your Mac.' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_mac_iphone_02__bwopmn2e8rhy_large.jpg'},
+                                                {id:'3' , title:'Start here. Finish there. Start an email on your iPhone and finish it on your Mac. With Handoff, when your Mac and iPhone are near each other, you can seamlessly pass what you’re doing from one device to the other.' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_mac_iphone_03__fayx0vk3pe2q_large.jpg'}
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
-                                    id: uuid(),
+                                    id: '4',
                                     url: 'https://www.apple.com/v/mac/home/ca/images/overview/consider/mac_compatibility__cu59oukz81ci_medium_2x.jpg',
                                     subTitle: 'Apple Intelligence',
                                     title: 'AI‑opening possibilities.',
-                                    color: 'black'
+                                    color: 'black',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'Compatibility',
+                                            name:'Mac runs your favorite apps.',
+                                            titles:[
+                                                {id:'1' , title:'The apps you love. Right on your Mac. From Microsoft 365 to Adobe Creative Cloud to Zoom,2 all your go-to apps are superfast and snappy on Mac.',url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_compatibility_01__dxaxtbfxpoia_large.jpg'},
+                                                {id :'2' , title:'Well connected. Mac comes with all the ports you need to use your favorite accessories, like external displays, hard drives, cameras, and printers.' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_compatibility_02__cl2otknevx1e_large.jpg'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
-                                    id: uuid(),
+                                    id: '5',
                                     url: 'https://www.apple.com/v/mac/home/ca/images/overview/consider/mac_durability__epiwcuk7zkeq_medium_2x.jpg',
                                     subTitle: 'Cutting-Edge Cameras',
                                     title: 'Picture your best',
                                     title1: 'photos and videos',
-                                    color: 'black'
+                                    color: 'black',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'Privacy and Security',
+                                            name:'Your business is nobody else’s.',
+                                            titles:[
+                                                {id:'1' , title:'You are your own password. Touch ID keeps all your passwords at the tip of your finger. So you can use it to unlock your Mac, access passkeys, and make payments.',url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_security_01__bi7nitjtbhxy_large.jpg'},
+                                                {id :'2' , title:'One app to find it all. If you can’t find your Mac or other Apple devices, the Find My app makes it easy to pinpoint where they are. You can even play a sound to help you locate them.' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_security_02__f0q4rcv2huq2_large.jpg'},
+                                                {id:'3' , title:'Designed to help protect your privacy. Mac gives you the freedom to choose what you share and how you share it, so you can use apps more securely, protect your data, and keep yourself safer on the web.' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_security_03__e67v26fulxg2_large.jpg'}
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
-                                    id: uuid(),
+                                    id:'6',
                                     url: 'https://www.apple.com/v/mac/home/ca/images/overview/consider/mac_security__gfwda10khdym_medium_2x.jpg',
                                     subTitle: 'Cutting-Edge Cameras',
                                     title: 'Picture your best',
                                     title1: 'photos and videos',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'Durability',
+                                            name:'Built to stand the test of time.',
+                                            titles:[
+                                                {id:'1' , title:'Super-duper durable. We design our products with durability in mind. Made with recycled aluminum enclosures, Mac computers are exceptionally well built and ready for pretty much anything.',url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_durability_01__ecn2so52g342_large.jpg'},
+                                                {id :'2' , title:'Reliably up to date. Our free macOS updates deliver the latest features and help keep Mac running smoothly and securely.' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_durability_02__cvo3enplo8cy_large.jpg'}
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
-                                    id: uuid(),
+                                    id: '7',
                                     url: 'https://www.apple.com/v/mac/home/ca/images/overview/consider/mac_values__c9gck9qi4kia_medium_2x.jpg',
                                     subTitle: 'Cutting-Edge Cameras',
                                     title: 'Picture your best',
                                     title1: 'photos and videos',
-                                    color: 'black'
+                                    color: 'black',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'Apple Values',
+                                            name:'Our values drive everything we do.',
+                                            titles:[
+                                                {id:'1' , title:'For a better future. We’re transforming how we make, assemble, and recycle Mac. We now use 100% recycled aluminum in the enclosures of Mac mini, MacBook Air, and MacBook Pro. Because the earth won’t wait. And neither will we.',url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_values_01__bcgexiqnh1n6_large.jpg'},
+                                                {id :'2' , title:'Good for you. Good for the planet. With Apple Trade In, you can get a great value for your current Mac and apply it toward a new device. If your Mac isn’t eligible for credit, we’ll recycle it for free.5' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_values_02__5x3csdgu94i2_large.jpg'},
+                                                {id:'3' , title:'Accessibility for all. With customizable Display Settings, Personal Voice, Live Captions, and more, Mac has industry-leading built-in accessibility features that help you connect, create, and do what you love — in the ways that work best for you.' , url:'https://www.apple.com/v/mac/home/ca/images/overview/consider/boc_values_03__gg2onmibavyy_large.jpg'}
+                                            ],
+                                        }
+                                    ]
                                 }
                             ]
                         }],
@@ -749,11 +545,11 @@ export default function server({ environment = "development" } = {}) {
                                     id: uuid(),
                                     url: 'https://www.apple.com/v/mac/home/ca/images/overview/help-me-choose/help_me_choose__0cunyw534bmm_large_2x.jpg',
                                     title: 'find the best Mac for you',
-                                    subTitle:'Whatever You Want',
+                                    subTitle: 'Whatever You Want',
                                     btn: 'Get started',
-                                    color:'black',
-                                    backgroundColor:'#006EDB'
-                                    
+                                    color: 'black',
+                                    backgroundColor: '#006EDB'
+
                                 }
                             ]
                         }],
@@ -789,15 +585,15 @@ export default function server({ environment = "development" } = {}) {
                             { url: "https://www.apple.com/v/watch/bo/images/chapternav/watch_nav_hermes_light__q9veqdmv73ey_large.svg", title: "Apple Watch Hermès" },
                             { url: "https://www.apple.com/v/watch/bo/images/chapternav/watch_nav_studio_light__dzd9rwk2242u_large.svg", title: "Apple Watch Studio" },
                             { url: "https://www.apple.com/v/watch/bo/images/chapternav/watch_nav_compare__cdkbsrx8arw2_large.svg", title: "Compare" },
-                            { url: "https://www.apple.com/v/watch/bo/images/chapternav/watch_nav_bands__b9c37m8hpgya_large.svg" ,title: "Bands" },
+                            { url: "https://www.apple.com/v/watch/bo/images/chapternav/watch_nav_bands__b9c37m8hpgya_large.svg", title: "Bands" },
                             { url: "https://www.apple.com/v/watch/bo/images/chapternav/watch_nav_airpods__e9283t02ry2y_large.svg", title: "AirPods" },
                             { url: "https://www.apple.com/v/watch/bo/images/chapternav/watch_nav_accessories__glsax9gul7ue_large.svg", title: "Accessories" },
                             // { url: "https://www.apple.com/v/watch/bo/images/chapternav/watch_nav_shop_watch_light__f4fr5gzdhjyy_large.svg", title: "Shop Watch" }
                         ],
                         ribbon: [
-                            { 
-                                id: uuid(), 
-                                subTitle: 'Get 3 months of Apple Fitness+ when you buy any Apple Watch.' 
+                            {
+                                id: uuid(),
+                                subTitle: 'Get 3 months of Apple Fitness+ when you buy any Apple Watch.'
                             }
                         ],
                         welcome: [{
@@ -812,7 +608,7 @@ export default function server({ environment = "development" } = {}) {
                                 {
                                     id: uuid(),
                                     url: 'https://www.apple.com/105/media/us/watch/2024/f0b51c31-e8a5-44d7-b23d-51bd2858454a/anim/hero/medium_2x.mp4#t=3.321861',
-                                    type:'video'
+                                    type: 'video'
                                 }
                             ]
                         }],
@@ -830,7 +626,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Health',
                                     title: 'Knows you by heart.',
                                     title1: '',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -838,7 +648,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Fitness',
                                     title: 'Every move counts.',
                                     title1: '',
-                                    color: 'black'
+                                    color: 'black',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -846,14 +670,42 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Connectivity',
                                     title: 'The right call for staying in touch.',
                                     title1: '',
-                                    color: 'black'
+                                    color: 'black',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
                                     url: 'https://www.apple.com/v/watch/bo/images/overview/consider/feature_safety__c5gr3nzfh20y_large_2x.jpg',
                                     subTitle: 'Safety',
                                     title: 'Good help is easy to find.',
-                                    color: 'black'
+                                    color: 'black',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -861,7 +713,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Apple Watch + iPhone',
                                     title: 'Dynamic duo',
                                     title1: '',
-                                    color: 'black'
+                                    color: 'black',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -869,7 +735,8 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Personalization',
                                     title: 'Make it you-nique',
                                     title1: '',
-                                    color: 'black'
+                                    color: 'black',
+                                    type:'gridScroll'
                                 },
                                 {
                                     id: uuid(),
@@ -877,7 +744,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Apple Watch Ultra 2',
                                     title: 'The ultimate sports and adventure watch.',
                                     title1: '',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -885,7 +766,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Apple Watch For Your Kids',
                                     title: 'Independence for them. Peace of mind for you.',
                                     title1: '',
-                                    color: 'black'
+                                    color: 'black',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 }
                             ]
                         }],
@@ -898,11 +793,11 @@ export default function server({ environment = "development" } = {}) {
                                     id: uuid(),
                                     url: 'https://www.apple.com/v/watch/bo/images/overview/banner/banner_watch_studio__bj5ig77p2j2a_large_2x.jpg',
                                     title: 'Mix.Match.Make it yours.',
-                                    subTitle:'Choose a case. Pick a band.',
+                                    subTitle: 'Choose a case. Pick a band.',
                                     btn: 'Create your style',
-                                    color:'black',
-                                    backgroundColor:''
-                                    
+                                    color: 'black',
+                                    backgroundColor: ''
+
                                 }
                             ]
                         }],
@@ -933,20 +828,20 @@ export default function server({ environment = "development" } = {}) {
                     server.create('iPad', {
                         nav: [
                             { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/ipadpro_light__bbws9fokxn3m_large.svg", title: "iPad Pro" },
-                            { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/pa_ipadair13_gen6_ipadair11_gen6_light__des6pp5gjg2u_large.svg", title: "IPad Air"},
+                            { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/pa_ipadair13_gen6_ipadair11_gen6_light__des6pp5gjg2u_large.svg", title: "IPad Air" },
                             { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/pa_ipadair_gen5_light__cboe3o98m36u_large.svg", title: "iPad" },
                             { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/ipadmini_light__chl9hj51b9qq_large.svg", title: "iPad mini" },
                             { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/ipad_compare_light__29tc9jjpoeqe_large.svg", title: "Campare" },
                             { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/apple_pencil_light__kv36e49avuq2_large.svg", title: "Apple Pencil" },
                             { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/keyboard_light__f5t6yntcyq2q_large.svg", title: "Keyboards" },
-                            { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/keyboard_light__f5t6yntcyq2q_large.svg" ,title: "Accessories" },
+                            { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/keyboard_light__f5t6yntcyq2q_large.svg", title: "Accessories" },
                             { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/ipados_light__ebqgefp11ogi_large.svg", title: "IPadOS 18" },
                             { url: "https://www.apple.com/v/ipad/home/ck/images/chapternav/ipados_light__ebqgefp11ogi_large.svg", title: "Shop iPad" },
                         ],
                         ribbon: [
-                            { 
-                                id: uuid(), 
-                                subTitle: 'Last chance to get a gift card up to $150 when you buy an eligible iPad or Mac with education savings. Offer ends 9/30. Δ Shop.' 
+                            {
+                                id: uuid(),
+                                subTitle: 'Last chance to get a gift card up to $150 when you buy an eligible iPad or Mac with education savings. Offer ends 9/30. Δ Shop.'
                             }
                         ],
                         welcome: [{
@@ -961,7 +856,7 @@ export default function server({ environment = "development" } = {}) {
                                 {
                                     id: uuid(),
                                     url: 'https://www.apple.com/105/media/us/ipad/2024/45762adb-901a-4726-8b0c-1f3ee092b09a/anim/welcome-hero/small_2x.mp4#t=10.97059',
-                                    type:'video'
+                                    type: 'video'
                                 }
                             ]
                         }],
@@ -979,7 +874,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Productivity',
                                     title: 'Your workplace can be any place.',
                                     title1: '',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -987,7 +896,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Creativity',
                                     title: 'Take your inner artist',
                                     title1: '',
-                                    color: 'White'
+                                    color: 'White',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -995,14 +918,42 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Learing',
                                     title: 'Your classroom can be anywhere.',
                                     title1: '',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
                                     url: 'https://www.apple.com/v/ipad/home/ck/images/overview/consider/fc_entertainment__dcynvyyoe7iq_small_2x.jpg',
                                     subTitle: 'Entertainment',
                                     title: 'Kick back. Tune in. Game on.',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -1010,7 +961,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Apple Pencil',
                                     title: 'Dream it up. Jot it down.',
                                     title1: '',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -1018,7 +983,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'iPadOS + Apps',
                                     title: 'Everyday superpowers. Built right in.',
                                     title1: '',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 }
                             ]
                         }],
@@ -1031,11 +1010,11 @@ export default function server({ environment = "development" } = {}) {
                                     id: uuid(),
                                     url: 'https://www.apple.com/v/ipad/home/ck/images/overview/augment/ia_ipad_iphone__cycr5ovszwmu_small_2x.jpg',
                                     title: 'Mix.Match.Make it yours.',
-                                    subTitle:'Choose a case. Pick a band.',
+                                    subTitle: 'Choose a case. Pick a band.',
                                     btn: 'Create your own style',
-                                    color:'white',
-                                    backgroundColor:''
-                                    
+                                    color: 'white',
+                                    backgroundColor: ''
+
                                 }
                             ]
                         }],
@@ -1066,15 +1045,15 @@ export default function server({ environment = "development" } = {}) {
                     server.create('airpod', {
                         nav: [
                             { url: "https://www.apple.com/v/airpods/x/images/chapternav/airpods_4__fqax1brwh46e_large.svg", title: "AirPods" },
-                            { url: "https://www.apple.com/v/airpods/x/images/chapternav/airpods_pro_light__ets5a19rt3au_large.svg", title: "AirPods"},
+                            { url: "https://www.apple.com/v/airpods/x/images/chapternav/airpods_pro_light__ets5a19rt3au_large.svg", title: "AirPods" },
                             { url: "https://www.apple.com/v/airpods/x/images/chapternav/airpods_max_light__cvaaddhgazqu_large.svg", title: "AirPods Max" },
                             { url: "https://www.apple.com/v/airpods/x/images/chapternav/airpods_compare_light__cmuvdvbxj1w2_large.svg", title: "Compare" },
                             { url: "https://www.apple.com/v/airpods/x/images/chapternav/apple_music_light__fexraacz3dme_large.svg", title: "Apple Music" }
                         ],
                         ribbon: [
-                            { 
-                                id: uuid(), 
-                                subTitle: 'AirPods Pro 2 will soon feature a scientifically validated Hearing Test and a clinical-grade Hearing Aid capability.1' 
+                            {
+                                id: uuid(),
+                                subTitle: 'AirPods Pro 2 will soon feature a scientifically validated Hearing Test and a clinical-grade Hearing Aid capability.1'
                             }
                         ],
                         welcome: [{
@@ -1089,14 +1068,14 @@ export default function server({ environment = "development" } = {}) {
                                 {
                                     id: uuid(),
                                     url: 'https://www.apple.com/105/media/us/airpods/2024/b4e8e99e-af2c-413e-84d4-50a9a5ee4fe3/anim/airpods/medium_2x.mp4',
-                                    title:'AirPods 4',
-                                    type:'video'
-                                    
+                                    title: 'AirPods 4',
+                                    type: 'video'
+
                                 },
                                 {
                                     id: uuid(),
                                     url: 'https://www.apple.com/105/media/us/airpods/2024/b4e8e99e-af2c-413e-84d4-50a9a5ee4fe3/anim/pro/medium_2x.mp4',
-                                    type:'video'
+                                    type: 'video'
                                 }
                             ]
                         }],
@@ -1114,7 +1093,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Active Noise Cancellation',
                                     title: 'Control what you hear. And what you don’t.',
                                     title1: '',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -1122,7 +1115,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Personalized Spatial Audio',
                                     title: 'Immersive sound. Fine‑tuned to you.',
                                     title1: '',
-                                    color: 'White'
+                                    color: 'White',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -1130,7 +1137,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Hearing Health',
                                     title: 'Check, aid, and help protect your hearing.1.',
                                     title1: '',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: uuid(),
@@ -1138,7 +1159,21 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Magical Experience',
                                     title: 'Simply effortless.',
                                     title1: '',
-                                    color: 'white'
+                                    color: 'white',
+                                    type:'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 }
                             ]
                         }],
@@ -1155,35 +1190,36 @@ export default function server({ environment = "development" } = {}) {
                                     btn: 'Create Style',
                                     color: '#BA62FC'
                                 }
-                            ]                            
+                            ]
                         }],
                         essentials: [{
                             first: [
-                                { title: '' }
+                                { title: 'EarPods essentials.' }
                             ],
                             second: [
                                 {
                                     id: uuid(),
                                     url: 'https://www.apple.com/v/airpods/x/images/overview/hero__gb4d3fd8jnu6_small.jpg',
-                                    title: '',
-                                    subTitle: '',
-                                    link: ''
+                                    title: 'White EarPods',
+                                    subTitle: 'Personalised Spatial Audio',
+                                    link: 'Learn more'
                                 },
                                 {
                                     id: uuid(),
                                     url: 'https://www.apple.com/v/airpods/x/images/overview/pro_endframe__e2wscfy18pme_small_2x.jpg',
-                                    title: '',
-                                    subTitle: '',
-                                    link: ''
+                                    title: 'White EarPods',
+                                    subTitle: 'Active Noise Cancellation',
+                                    link: 'Learn more'
                                 }
                             ]
                         }]
                     }),
 
-                    server.create('tvhome', { 
+                    server.create('tvhome', {
+                        type: 'gridImg',
                         nav: [
                             { url: "https://www.apple.com/v/tv-home/n/images/chapternav/light/apple_tv4k_fill_light__b2wtl9srjwb6_large.svg", title: "Apple TV 4K" },
-                            { url: "https://www.apple.com/v/tv-home/n/images/chapternav/light/apple_tv_app_light__f6s7yq5zej2a_large.svg", title: "Apple TV app"},
+                            { url: "https://www.apple.com/v/tv-home/n/images/chapternav/light/apple_tv_app_light__f6s7yq5zej2a_large.svg", title: "Apple TV app" },
                             { url: "https://www.apple.com/v/tv-home/n/images/chapternav/light/apple_tv_plus_light__fjwmgqxuwomu_large.svg", title: "Apple TV+" },
                             { url: "https://www.apple.com/v/tv-home/n/images/chapternav/light/homepod_light__b9tveb5xovhy_large.svg", title: "HomePod" },
                             { url: "https://www.apple.com/v/tv-home/n/images/chapternav/light/homepodmini_light__genrqjukfl26_large.svg", title: "HomePod mini" },
@@ -1191,9 +1227,9 @@ export default function server({ environment = "development" } = {}) {
                             { url: "https://www.apple.com/v/tv-home/n/images/chapternav/light/home_accessories_light__eu5v1y6592eu_large.svg", title: "Accessories" }
                         ],
                         ribbon: [
-                            { 
-                                id: uuid(), 
-                                subTitle: 'AirPods Pro 2 will soon feature a scientifically validated Hearing Test and a clinical-grade Hearing Aid capability.1' 
+                            {
+                                id: uuid(),
+                                subTitle: 'AirPods Pro 2 will soon feature a scientifically validated Hearing Test and a clinical-grade Hearing Aid capability.1'
                             }
                         ],
                         welcome: [{
@@ -1208,9 +1244,9 @@ export default function server({ environment = "development" } = {}) {
                                 {
                                     id: uuid(),
                                     url: 'https://apple.com/v/tv-home/n/images/overview/hero__dbphk49ymi2q_large.jpg',
-                                    title:'The future hits home.',
-                                    subTitle:'Simply connect your favorite devices and transform your house into a remarkably smart, convenient, and entertaining home. Elevate movie night with theater-like picture and sound. Play any song, in any room, from anywhere. And control lights, locks, and thermostats using Siri. All with the security and privacy of Apple.',
-                                    type:'img'
+                                    title: 'The future hits home.',
+                                    subTitle: 'Simply connect your favorite devices and transform your house into a remarkably smart, convenient, and entertaining home. Elevate movie night with theater-like picture and sound. Play any song, in any room, from anywhere. And control lights, locks, and thermostats using Siri. All with the security and privacy of Apple.',
+                                    type: 'img'
                                 }
                             ]
                         }],
@@ -1227,48 +1263,44 @@ export default function server({ environment = "development" } = {}) {
                                     url: 'https://www.apple.com/v/tv-home/n/images/overview/homepod__eam53jjm772a_small_2x.jpg',
                                     subTitle: 'HomePod',
                                     title: 'Profound sound.',
-                                    price:'$299',
-                                    btn:'Buy',
-                                    link:'Learn more >',
+                                    price: '$299',
+                                    btn: 'Buy',
+                                    link: 'Learn more >',
                                     color: 'white',
-                                    backgroundColor:'black',
-                                    type:'gridImg'
+                                    backgroundColor: 'black',
                                 },
                                 {
                                     id: 2,
                                     url: 'https://www.apple.com/v/tv-home/n/images/overview/room_filling_sound__zagu3551kwyi_small_2x.jpg',
                                     subTitle: 'HomePod mini',
                                     title: 'Surprising sound for its size.',
-                                    price:'$99',
-                                    btn:'Buy',
-                                    link:'Learn more >',
+                                    price: '$99',
+                                    btn: 'Buy',
+                                    link: 'Learn more >',
                                     color: 'black',
-                                    backgroundColor:'white',
-                                    type:'gridImg'
+                                    backgroundColor: 'white',
                                 },
                                 {
                                     id: 3,
                                     url: 'https://www.apple.com/v/tv-home/n/images/overview/apple_tv_4k__b30wcqp0pdle_small_2x.jpg',
                                     subTitle: 'apple tv 4k',
                                     title: 'The Apple experience. Cinematic in every sense.',
-                                    price:'Starting at $129',
-                                    btn:'Buy',
-                                    link:'Learn more >',
+                                    price: 'Starting at $129',
+                                    btn: 'Buy',
+                                    link: 'Learn more >',
                                     color: 'black',
-                                    backgroundColor:'white',
-                                    type:'gridImg'
+                                    backgroundColor: 'white',
                                 },
                                 {
                                     id: 4,
                                     url: 'https://www.apple.com/v/tv-home/n/images/overview/homeapp__cpc1k972xys2_small_2x.jpg',
                                     subTitle: 'Home app',
                                     title: 'The foundation for a smarter home.',
-                                    price:'',
-                                    btn:'',
-                                    link:'Learn more >',
+                                    price: '',
+                                    btn: '',
+                                    link: 'Learn more >',
                                     color: 'black',
-                                    backgroundColor:'white',
-                                    type:'gridImg'
+                                    backgroundColor: 'white',
                                 },
                             ]
                         }],
@@ -1285,7 +1317,7 @@ export default function server({ environment = "development" } = {}) {
                                     btn: 'Create Style',
                                     color: '#BA62FC'
                                 }
-                            ]                            
+                            ]
                         }],
                         essentials: [{
                             first: [
@@ -1388,7 +1420,7 @@ export default function server({ environment = "development" } = {}) {
                                     url: 'https://apple.com/105/media/us/iphone/family/2024/cf19f185-dd7e-4350-97ff-e44860713b54/anim/welcome/small_2x.mp4#t=6.695677.mp4',
                                     title: 'AirPods 4',
                                     type: 'video'
-                    
+
                                 }
                             ]
                         }],
@@ -1406,7 +1438,23 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Apple Intelligence',
                                     title: 'AI‑opening possibilities.',
                                     color: 'white',
-                                    type:'gridScroll'
+                                    type: 'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'Apple Intelligence',
+                                            name:'AI-opening possibilities.',
+                                            titles:[
+                                                {id:'1' , title:'Now that’s smart. Our latest iPhone models are built for Apple Intelligence, the personal intelligence system that helps you write, express yourself, and get things done effortlessly. With groundbreaking privacy protections, it gives you peace of mind that no one else can access your data — not even Apple.1',url:'https://www.apple.com'},
+                                                {id:'2' , title:'Find just the right words. Writing Tools can proofread your text and rewrite different versions until the tone is just right, and summarize selected text with a simple tap. Theyre available nearly everywhere you write, including third-party apps.',url:'https://www.apple.com'},
+                                                {id:'3' , title:'Express yourself visually. Make a Genmoji right in the keyboard to match any conversation. Want to create a rainbow cactus? You got it. Just provide a description to see a preview.',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'Express yourself visually. Make a Genmoji right in the keyboard to match any conversation. Want to create a rainbow cactus? You got it. Just provide a description to see a preview.',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: 2,
@@ -1415,7 +1463,20 @@ export default function server({ environment = "development" } = {}) {
                                     title: 'Picture your best',
                                     title1: 'photes and videos',
                                     color: 'white',
-                                    type:'gridScroll'
+                                    type: 'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: 3,
@@ -1423,7 +1484,20 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Chip and Battery Life',
                                     title: 'Fast that lasts.',
                                     color: 'white',
-                                    type:'gridScroll'
+                                    type: 'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: 4,
@@ -1432,7 +1506,20 @@ export default function server({ environment = "development" } = {}) {
                                     title: 'Beautiful and durable,',
                                     title1: 'by Design',
                                     color: 'black',
-                                    type:'gridScroll'
+                                    type: 'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: 5,
@@ -1440,7 +1527,20 @@ export default function server({ environment = "development" } = {}) {
                                     subTitle: 'Environment',
                                     title: 'Recycle.Reuse.Repeat.',
                                     color: 'black',
-                                    type:'gridScroll'
+                                    type: 'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: 6,
@@ -1449,7 +1549,20 @@ export default function server({ environment = "development" } = {}) {
                                     title: 'Your Data',
                                     title1: 'Just where you want it',
                                     color: 'white',
-                                    type:'gridScroll'
+                                    type: 'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: 7,
@@ -1458,7 +1571,20 @@ export default function server({ environment = "development" } = {}) {
                                     title: 'Make it you.',
                                     title1: 'Thought and through',
                                     color: 'white',
-                                    type:'gridScroll'
+                                    type: 'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 },
                                 {
                                     id: 8,
@@ -1467,13 +1593,26 @@ export default function server({ environment = "development" } = {}) {
                                     title: 'Helpful safety features.',
                                     title1: 'Just in case.',
                                     color: 'white',
-                                    type:'gridScroll'
+                                    type: 'gridScroll',
+                                    popUp:[
+                                        {
+                                            id:'1',
+                                            subTitle:'',
+                                            name:'',
+                                            titles:[
+                                                {id:'1' , title:'',url:'https://www.apple.com'},
+                                                {id:'2' , title:'',url:'https://www.apple.com'},
+                                                {id:'3' , title:'',url:'https://www.apple.com'},
+                                                {id:'4' , title:'',url:'https://www.apple.com'},
+                                            ],
+                                        }
+                                    ]
                                 }
                             ]
                         }],
                         banner: [{
                             first: [
-                                { title: 'Take a closer look at our latest models.'}
+                                { title: 'Take a closer look at our latest models.' }
                             ],
                             second: [
                                 {
@@ -1508,23 +1647,10 @@ export default function server({ environment = "development" } = {}) {
                             ]
                         }]
                     })
-
-
-                ]
-            })
-            
-            
         },
+
         routes() {
             this.namespace = "api/apple"
-            // this.get("/", (schema, request) => {
-            //     return schema.phones.all()
-            // });
-
-            // this.namespace = "api/selectPhones"
-            // this.get("/", (schema, request) => {
-            //     return schema.selectPhones.all()
-            // });
             this.namespace = 'api';
             this.get('/ItemLists', (schema) => {
                 return schema.itemLists.all()
@@ -1551,10 +1677,6 @@ export default function server({ environment = "development" } = {}) {
             this.get('/details', (schema) => {
                 return schema.details.all();
             })
-
-            // this.get('/iPhoneGalleryGetToKnows', (schema) => {
-            //     return schema.iPhoneGalleryGetToKnows.all();
-            // })
 
             this.get('/iPhoneessentials', (schema) => {
                 return schema.iPhoneessentials.all();
@@ -1585,12 +1707,12 @@ export default function server({ environment = "development" } = {}) {
             })
 
             this.get('/tvhomes', (schema) => {
-                console.log("tv" , schema);
+                console.log("tv", schema);
                 return schema.tvhomes.all();
             })
 
             this.get('/iphones', (schema) => {
-                console.log("iphones" , schema);
+                console.log("iphones", schema);
                 return schema.iphones.all();
             })
 
@@ -1599,4 +1721,18 @@ export default function server({ environment = "development" } = {}) {
     return server;
 }
 
-// airpod
+// popUp:[
+//     {
+//         id:'1',
+//         subTitle:'',
+//         name:'',
+//         titles:[
+//             {id:'1' , title:'',url:''},
+//             {id :'2' , title:'' , url:''},
+//             {id:'3' , title:'' , url:''}
+//         ],
+//     }
+// ]
+
+
+// https://www.apple.com

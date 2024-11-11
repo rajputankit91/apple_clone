@@ -3,7 +3,7 @@ import Heading from "../heading"
 import Image from "../image"
 
 export default function AppleCare(){
-        const[care,setCare] =useState([])
+        const[care,setCare] = useState([]);
 
         const careData = async() => {
             const careFetch = await fetch("/api/appleCares")
